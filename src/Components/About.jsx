@@ -15,15 +15,12 @@ import "../../src/App.css";
 
 function About() {
   useEffect(() => {
-    // gsap.fromTo(".about-main", { opacity: 0 }, { opacity: 1 });
-
     gsap.fromTo(
       ".about",
       { delay: 1, opacity: 0 },
       {
         duration: 1.5,
         opacity: 1,
-        // x: "0%",
         ease: "power1",
         stagger: 0.5,
         scrollTrigger: {
@@ -46,17 +43,6 @@ function About() {
         mt="4rem"
         pt="1rem"
       >
-        {/* <Text
-          color="white"
-          fontSize="2rem"
-          fontFamily="PT Sans, sans-serif"
-          m="auto"
-          className="op"
-        >
-          ABOUT
-        </Text> */}
-
-        {/* <Image pl={{ base: "2vw", sm: "8vw" }} src={About1} /> */}
         <Text
           fontSize={{ base: "12vw", md: "7vw" }}
           textAlign={{ base: "center", md: "left", lg: "left" }}

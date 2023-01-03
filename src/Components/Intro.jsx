@@ -53,18 +53,6 @@ function Intro() {
         },
       }
     );
-    gsap.fromTo(
-      ".coding_man",
-      { opacity: 0, transform: "scale(.5)" },
-      {
-        duration: 1,
-        transform: "scale(1)",
-        opacity: 1,
-        scrollTrigger: {
-          trigger: ".name",
-        },
-      }
-    );
   }, []);
 
   return (

@@ -1,7 +1,6 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/card";
+import { Card, CardBody, CardFooter } from "@chakra-ui/card";
 import {
-  Box,
   Image,
   Stack,
   Heading,

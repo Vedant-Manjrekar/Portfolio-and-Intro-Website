@@ -72,6 +72,11 @@ a {
 
   #project_card {
     margin-right: 3rem;
+    margin-left: 10vw;
+  }
+
+  .cardBody {
+    width: 90vw;
   }
 }
 

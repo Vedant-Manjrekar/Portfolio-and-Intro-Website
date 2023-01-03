@@ -6,8 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 // // Media
 import netflixPic from "../assets/netflix_1.png";
 import expenseTrack from "../assets/expenseTracker.png";
-import meme_generator from "../assets/meme_generator.png";
+import meme_generator from "../assets/Meme_genrator1.png";
 import Image_Search_App from "../assets/image_search_app_thumbnail.png";
+import e_commerce from "../assets/E-commerce.png";
+import lift_simulation from "../assets/Lift_simulation.png";
 import Card1 from "./Card";
 
 // // Registrations
@@ -56,7 +58,8 @@ function Projects() {
         pl={{ base: "1vw", md: "9vw" }}
         mt={"5vw"}
         margin="auto"
-        w={{ base: "72vw", md: "98vw", sm: "98vw", lg: "98vw" }}
+        w={{ base: "null", md: "98vw", sm: "98vw", lg: "98vw" }}
+        className="cardBody"
       >
         <div className="card">
           {/* Expense Tracker App */}
@@ -71,6 +74,16 @@ function Projects() {
             github="https://github.com/Vedant-Manjrekar/Expense-Tracker"
           />
 
+          {/* E-commerce website */}
+          <Card1
+            classs={"projects"}
+            pic={e_commerce}
+            name="E-commerce website"
+            info={"E-commerce website made using MERN stack."}
+            url="https://e-commerce-store-delta.vercel.app/"
+            github="https://github.com/Vedant-Manjrekar/E-commerce-Website-full"
+          />
+
           {/* Image Search App */}
           <Card1
             classs={"projects"}
@@ -79,6 +92,16 @@ function Projects() {
             info="App made using ReactJS which can search Images and also lets users to download them."
             url="https://image-search-seven.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Image-Search-"
+          />
+
+          {/* Lift Simulation */}
+          <Card1
+            classs={"projects"}
+            pic={lift_simulation}
+            name="Lift Simulation"
+            info="App made using HTML, CSS and Vanilla JavaScript which can make lifts move and create a lift like simulation."
+            url="https://lift-simulation-ten.vercel.app/"
+            github="https://github.com/Vedant-Manjrekar/Lift-Simulation"
           />
 
           {/* Netflix Clone */}
@@ -96,6 +119,7 @@ function Projects() {
             classs={"projects"}
             pic={meme_generator}
             name="Meme Generator"
+            info="Meme Generator made using ReactJs and meme-template-api, which lets users genarate random memes, edit them and download them."
             url="https://meme-generator28.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Meme-Generator"
           />
