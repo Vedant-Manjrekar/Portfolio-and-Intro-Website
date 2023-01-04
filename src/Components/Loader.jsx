@@ -1,7 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import Anime, { anime } from "react-anime";
-let colors = ["blue", "green", "red"];
+import Anime from "react-anime";
 
 function Loader() {
   return (
@@ -27,6 +26,7 @@ function Loader() {
           transform="rotate(45deg)"
           borderRadius="2px"
           h="3vw"
+          fontSize="1.5vw"
           w={"3vw"}
           display="flex"
           justifyContent={"center"}

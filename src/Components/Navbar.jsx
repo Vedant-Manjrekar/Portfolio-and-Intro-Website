@@ -92,7 +92,7 @@ function Navbar() {
       gap="2rem"
     >
       {/* Face */}
-      <Box
+      {/* <Box
         color="black"
         gridArea={"1 / 1 / 2 / 2"}
         w="100%"
@@ -102,12 +102,12 @@ function Navbar() {
         className="icons"
       >
         face
-      </Box>
+      </Box> */}
 
       {/* Home */}
       <Box
         color="black"
-        gridArea={"3 / 1 / 4 / 2"}
+        gridArea={"1 / 1 / 4 / 2"}
         w="100%"
         display="flex"
         justifyContent="center"
