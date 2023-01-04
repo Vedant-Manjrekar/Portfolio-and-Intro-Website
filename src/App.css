@@ -15,6 +15,29 @@
   display: flex;
 }
 
+.brk {
+  display: none;
+}
+
+.scroll {
+  width: -webkit-fill-available;
+  text-align: right;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav {
+  display: block;
+  position: fixed;
+  width: -webkit-fill-available;
+  height: 4rem;
+  background-color: #242424;
+  top: 0;
+  z-index: 1;
+}
+
 .active {
   color: #34d5b0;
 }
@@ -24,8 +47,17 @@
   stroke: red;
 }
 
+#project_card {
+  margin-right: 2vw;
+}
+
 .tech_stck {
   display: inline;
+}
+
+.resume_btn:hover {
+  color: black;
+  border: none;
 }
 
 .card {
@@ -33,6 +65,7 @@
   width: max-content;
   overflow-x: scroll;
   margin-top: 5vh;
+  margin-left: 1vw;
 }
 
 .card-in {
@@ -78,10 +111,43 @@ a {
   .cardBody {
     width: 90vw;
   }
+
+  .brk {
+    display: block;
+  }
 }
 
 @media (min-width: 481px) {
   #drawer-btn {
     display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #drawer-btn {
+    display: none;
+  }
+
+  #projects_ {
+    margin-left: 8vw;
+  }
+
+  .projects_ {
+    font-size: 9vw !important;
+    padding-left: 3vw !important;
+    text-align: left !important;
+  }
+
+  #project_card {
+    width: 49vw;
+    margin-right: 8vw;
+  }
+
+  .card {
+    margin-left: 7vw;
+  }
+
+  .about_t {
+    margin-left: 7vw;
   }
 }

@@ -10,6 +10,7 @@ import meme_generator from "../assets/Meme_genrator1.png";
 import Image_Search_App from "../assets/image_search_app_thumbnail.png";
 import e_commerce from "../assets/E-commerce.png";
 import lift_simulation from "../assets/Lift_simulation.png";
+import tenzies from "../assets/Tenzies.png";
 import Card1 from "./Card";
 
 // // Registrations
@@ -47,7 +48,9 @@ function Projects() {
         fontSize={{ base: "12vw", md: "7vw" }}
         textAlign={{ base: "center", md: "left", lg: "left" }}
         className="projects_"
-        pl={{ base: "2vw", sm: "8vw", md: "8vw", lg: "12vw" }}
+        pl={{ base: "0", sm: "10vw", md: "10vw", lg: "10vw" }}
+        marginTop={{ base: "0", md: "20vh" }}
+        id="proj_t"
       >
         {" "}
         &lt; PROJECTS /&gt;
@@ -63,6 +66,7 @@ function Projects() {
       >
         <div className="card">
           {/* Expense Tracker App */}
+
           <Card1
             classs={"projects"}
             pic={expenseTrack}
@@ -73,7 +77,6 @@ function Projects() {
             url="https://expense-tracker-sigma-seven.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Expense-Tracker"
           />
-
           {/* E-commerce website */}
           <Card1
             classs={"projects"}
@@ -83,17 +86,15 @@ function Projects() {
             url="https://e-commerce-store-delta.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/E-commerce-Website-full"
           />
-
           {/* Image Search App */}
           <Card1
             classs={"projects"}
             pic={Image_Search_App}
             name="Image Search App"
-            info="App made using ReactJS which can search Images and also lets users to download them."
+            info="App made using ReactJS which lets the users search images and download them."
             url="https://image-search-seven.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Image-Search-"
           />
-
           {/* Lift Simulation */}
           <Card1
             classs={"projects"}
@@ -103,7 +104,6 @@ function Projects() {
             url="https://lift-simulation-ten.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Lift-Simulation"
           />
-
           {/* Netflix Clone */}
           <Card1
             classs={"projects"}
@@ -122,6 +122,16 @@ function Projects() {
             info="Meme Generator made using ReactJs and meme-template-api, which lets users genarate random memes, edit them and download them."
             url="https://meme-generator28.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Meme-Generator"
+          />
+
+          {/* Tenzies game */}
+          <Card1
+            classs={"projects"}
+            pic={tenzies}
+            name="Tenzies game"
+            info="Tenzies game made using ReactJs."
+            url="https://tenzies-game-six.vercel.app/"
+            github="https://github.com/Vedant-Manjrekar/Tenzies-Game"
           />
         </div>
       </Box>

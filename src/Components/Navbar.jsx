@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollToPlugin);
 export function goToProjects() {
   gsap.to(window, {
     duration: 1,
-    scrollTo: { y: "#projects_" },
+    scrollTo: { y: "#proj_t" },
   });
 
   document.getElementById("home_nav")?.classList.remove("active");
@@ -166,7 +166,7 @@ function Navbar() {
         alignItems="center"
         cursor="pointer"
       >
-        <a href="https://github.com/Vedant-Manjrekar">
+        <a target="_blank" href="https://github.com/Vedant-Manjrekar">
           <BsGithub size="3vw" className="icons" />
         </a>
       </Box>
@@ -178,7 +178,7 @@ function Navbar() {
         justifyContent="center"
         alignItems="center"
       >
-        <a href="https://twitter.com/vedstwt">
+        <a target="_blank" href="https://twitter.com/vedstwt">
           <BsTwitter size="3vw" className="icons" />
         </a>
       </Box>
@@ -190,7 +190,10 @@ function Navbar() {
         justifyContent="center"
         alignItems="center"
       >
-        <a href="https://www.linkedin.com/in/vedant-manjrekar-705707222/">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/vedant-manjrekar-705707222/"
+        >
           <BsLinkedin size="3vw" className="icons" />
         </a>
       </Box>

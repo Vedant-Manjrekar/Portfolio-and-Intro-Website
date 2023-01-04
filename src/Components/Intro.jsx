@@ -66,20 +66,20 @@ function Intro() {
       w="stretch"
       m={{ base: "25vh", xs: "25vh", sm: "25vh", lg: null }}
     >
-      <Button
-        ref={btnRef}
-        id="drawer-btn"
-        colorScheme="teal"
-        variant="outline"
-        w={{ base: "12vw" }}
-        onClick={onOpen}
-        position="fixed"
-        top="2vh"
-        left="2vh"
-        textAlign="center"
-      >
-        <GoThreeBars />
-      </Button>
+      <div className="nav" id="drawer-btn">
+        <Button
+          ref={btnRef}
+          colorScheme="teal"
+          variant="outline"
+          w={{ base: "12vw" }}
+          onClick={onOpen}
+          top="2vh"
+          left="2vh"
+          textAlign="center"
+        >
+          <GoThreeBars />
+        </Button>
+      </div>
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -108,17 +108,6 @@ function Intro() {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-
-      {/* <Image
-        className="coding_man"
-        position="absolute"
-        display={{ base: "none", sm: "none", md: "none", lg: "inline-block" }}
-        right={{ base: "5vw", md: "4vw", lg: "4vw" }}
-        zIndex="1"
-        top={{ base: "18vw", sm: "4vw", md: "5vw" }}
-        src={coding_man2}
-        w={{ base: "35vw", sm: "30vw", md: "30vw", lg: "15vw" }}
-      /> */}
 
       <Text
         className="desc"
@@ -193,21 +182,24 @@ function Intro() {
         className="name"
       >
         <Button
-          colorScheme="orange"
+          // colorScheme="whiteAlpha"
+          color="white"
           variant="outline"
           fontSize="2vw"
           h={{ base: "8vw", sm: "8vw", lg: "5vw" }}
           w="18vw"
+          className="resume_btn"
         >
           Resume
         </Button>
 
         <Button
-          colorScheme="telegram"
+          color="white"
           variant="outline"
           fontSize="2vw"
           h={{ base: "8vw", sm: "8vw", lg: "5vw" }}
           w="18vw"
+          className="resume_btn"
         >
           Contact Me
         </Button>

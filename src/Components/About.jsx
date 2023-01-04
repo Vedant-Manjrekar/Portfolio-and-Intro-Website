@@ -33,7 +33,7 @@ function About() {
   return (
     <>
       <Box
-        h={{ sm: "max-content", md: "110vh", lg: "110vh" }}
+        h={{ sm: "max-content", md: "100vh", lg: "100vh" }}
         display="grid"
         id="about"
         className="about"
@@ -46,9 +46,9 @@ function About() {
         <Text
           fontSize={{ base: "12vw", md: "7vw" }}
           textAlign={{ base: "center", md: "left", lg: "left" }}
-          className="projects_"
-          mb={{ base: "2vw", md: null }}
-          pl={{ base: "2vw", md: "10vw" }}
+          className="projects_ about_t"
+          // mb={{ base: "2vw", md: null }}
+          pl={{ base: "0", md: "10vw" }}
         >
           &lt; ABOUT me /&gt;
         </Text>
@@ -63,14 +63,15 @@ function About() {
         >
           <Text
             className="op"
-            p={{ base: "0 10vw", md: "1vw", sm: "1vw", lg: "1vw" }}
+            p={{ base: "0 10vw", md: "0 1vw", sm: "0 1vw", lg: "0 1vw" }}
           >
-            <br />
+            <br className="brk" />
             Hello, my name is Vedant Manjrekar.
             <br />
             <br />I am a web developer with a focus on ReactJs and overall MERN
-            Stack, also a creative designer, who aims to work with business and
-            marginalized communities to bring their passion to life.
+            Stack, also a creative designer, who aims to work with companies,
+            businesses and marginalized communities to bring their passion to
+            life.
           </Text>
 
           <Text
