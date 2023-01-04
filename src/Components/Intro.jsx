@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useDisclosure } from "@chakra-ui/react";
 import { GoThreeBars } from "react-icons/go";
+import resume from "../assets/Vedant_resume.pdf";
 import { goToHome, goToAbout, goToProjects } from "./Navbar";
 import {
   Drawer,
@@ -95,13 +96,13 @@ function Intro() {
             alignItems="center"
             justifyContent="center"
           >
-            <Text onClick={goToHome} fontWeight="bold">
+            <Text onClick={goToHome} fontWeight="bold" textAlign="center">
               Home
             </Text>
-            <Text onClick={goToAbout} fontWeight="bold">
+            <Text onClick={goToAbout} fontWeight="bold" textAlign="center">
               About
             </Text>
-            <Text onClick={goToProjects} fontWeight="bold">
+            <Text onClick={goToProjects} fontWeight="bold" textAlign="center">
               Projects
             </Text>
             <Text fontWeight="bold">Contact Me</Text>
@@ -190,7 +191,9 @@ function Intro() {
           w="18vw"
           className="resume_btn"
         >
-          Resume
+          <a href={resume} target="_blank">
+            Resume
+          </a>
         </Button>
 
         <Button
