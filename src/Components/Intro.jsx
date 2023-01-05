@@ -7,12 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useDisclosure } from "@chakra-ui/react";
 import { GoThreeBars } from "react-icons/go";
 import resume from "../assets/Vedant_resume.pdf";
-import { goToHome, goToAbout, goToProjects } from "./Navbar";
+import { goToHome, goToAbout, goToProjects, goToContact } from "./Navbar";
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
@@ -105,7 +103,9 @@ function Intro() {
             <Text onClick={goToProjects} fontWeight="bold" textAlign="center">
               Projects
             </Text>
-            <Text fontWeight="bold">Contact Me</Text>
+            <Text fontWeight="bold" onClick={goToContact}>
+              Contact Me
+            </Text>
           </DrawerBody>
         </DrawerContent>
       </Drawer>
@@ -203,6 +203,7 @@ function Intro() {
           h={{ base: "8vw", sm: "8vw", lg: "5vw" }}
           w="18vw"
           className="resume_btn"
+          onClick={goToContact}
         >
           Contact Me
         </Button>

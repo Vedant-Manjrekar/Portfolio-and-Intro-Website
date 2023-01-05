@@ -1,40 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { Grid, Stack, Box } from "@chakra-ui/react";
+import React, { useEffect } from "react";
+import { Stack, Box } from "@chakra-ui/react";
 import { BiHomeCircle } from "react-icons/bi";
 import { BiFolder } from "react-icons/bi";
 import { BiUser } from "react-icons/bi";
-import { GrContact } from "react-icons/gr";
+import { AiOutlineMessage } from "react-icons/ai";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import gsap from "gsap";
-import { TweenMax } from "gsap/gsap-core";
 gsap.registerPlugin(ScrollToPlugin);
 
-export function goToProjects() {
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: { y: "#proj_t" },
-  });
-
-  document.getElementById("home_nav")?.classList.remove("active");
-  document.getElementById("about_nav")?.classList.remove("active");
-  document.getElementById("proj_nav")?.classList.add("active");
-  document.getElementById("contact_nav")?.classList.remove("active");
-}
-
-export function goToAbout() {
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: { y: "#about" },
-  });
-
-  document.getElementById("home_nav")?.classList.remove("active");
-  document.getElementById("about_nav")?.classList.add("active");
-  document.getElementById("proj_nav")?.classList.remove("active");
-  document.getElementById("contact_nav")?.classList.remove("active");
-}
-
+// Home page
 export function goToHome() {
   gsap.to(window, {
     duration: 2,
@@ -45,10 +21,57 @@ export function goToHome() {
   document.getElementById("home_nav")?.classList.add("active");
   document.getElementById("about_nav")?.classList.remove("active");
   document.getElementById("proj_nav")?.classList.remove("active");
-  document.getElementById("contact_nav")?.classList.remove("active");
+  document.getElementById("contact_icon")?.classList.remove("active");
 }
 
+// About section
+export function goToAbout() {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: { y: "#about" },
+  });
+
+  document.getElementById("home_nav")?.classList.remove("active");
+  document.getElementById("about_nav")?.classList.add("active");
+  document.getElementById("proj_nav")?.classList.remove("active");
+  document.getElementById("contact_icon")?.classList.remove("active");
+}
+
+// Projects section
+export function goToProjects() {
+  gsap.to(window, {
+    duration: 2,
+    scrollTo: { y: "#proj_t" },
+  });
+
+  document.getElementById("home_nav")?.classList.remove("active");
+  document.getElementById("about_nav")?.classList.remove("active");
+  document.getElementById("contact_icon")?.classList.remove("active");
+  document.getElementById("proj_nav")?.classList.add("active");
+}
+
+// Contact form
+export function goToContact() {
+  gsap.to(window, {
+    duration: 2,
+    scrollTo: { y: "#contact_tt" },
+  });
+
+  document.getElementById("contact_icon")?.classList.add("active");
+  document.getElementById("home_nav")?.classList.remove("active");
+  document.getElementById("about_nav")?.classList.remove("active");
+  document.getElementById("proj_nav")?.classList.remove("active");
+}
+
+window.addEventListener("wheel", () => {
+  document.getElementById("home_nav")?.classList.remove("active");
+  document.getElementById("about_nav")?.classList.remove("active");
+  document.getElementById("proj_nav")?.classList.remove("active");
+  document.getElementById("contact_icon")?.classList.remove("active");
+});
+
 function Navbar() {
+  // Load navbar
   useEffect(() => {
     gsap.fromTo(
       ".navbar",
@@ -91,19 +114,6 @@ function Navbar() {
       justifyContent="center"
       gap="2rem"
     >
-      {/* Face */}
-      {/* <Box
-        color="black"
-        gridArea={"1 / 1 / 2 / 2"}
-        w="100%"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        className="icons"
-      >
-        face
-      </Box> */}
-
       {/* Home */}
       <Box
         color="black"
@@ -152,10 +162,12 @@ function Navbar() {
         w="100%"
         display="flex"
         justifyContent="center"
+        onClick={goToContact}
         alignItems="center"
         cursor="pointer"
+        color="black"
       >
-        <GrContact className="icons" size="3vw" />
+        <AiOutlineMessage className="icons" id="contact_icon" size="3vw" />
       </Box>
       <Box
         color="black"

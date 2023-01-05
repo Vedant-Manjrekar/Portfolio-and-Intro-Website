@@ -45,7 +45,7 @@ function Projects() {
       mt="5rem"
     >
       <Text
-        fontSize={{ base: "12vw", md: "7vw" }}
+        fontSize={{ base: "12vw", md: "7vw", lg: "6vw" }}
         textAlign={{ base: "center", md: "left", lg: "left" }}
         className="projects_"
         pl={{ base: "0", sm: "10vw", md: "10vw", lg: "10vw" }}
@@ -53,7 +53,7 @@ function Projects() {
         id="proj_t"
       >
         {" "}
-        &lt; PROJECTS /&gt;
+        &lt; PROOF of WORK /&gt;
       </Text>
 
       <Box
@@ -72,7 +72,7 @@ function Projects() {
             pic={expenseTrack}
             name="Expense Tracker"
             info={
-              "Voice command enabled web-App made using ReactJS, Firebase and Speechly to keep track of our Incomes and Expenses."
+              "Voice command enabled web-App made using ReactJS, Firebase and Speechly which can keep track of our Incomes and Expenses."
             }
             url="https://expense-tracker-sigma-seven.vercel.app/"
             github="https://github.com/Vedant-Manjrekar/Expense-Tracker"

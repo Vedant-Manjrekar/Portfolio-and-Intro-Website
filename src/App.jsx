@@ -25,6 +25,15 @@ function App() {
       </div>
     </ChakraProvider>
   );
+
+  // return (
+  //   <ChakraProvider>
+  //     <div className="App">
+  //       <Navbar />
+  //       <Home />
+  //     </div>
+  //   </ChakraProvider>
+  // );
   // return <Loader />;
 }
 

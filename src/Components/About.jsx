@@ -98,7 +98,10 @@ function About() {
             working with recently]
           </Text>
 
-          <Grid gridTemplateColumns="1fr 1fr">
+          <Grid
+            gridTemplateColumns="1fr 1fr"
+            fontSize={{ base: "1rem", lg: "1.5rem" }}
+          >
             <li className="op">
               <AiFillHtml5 className="tech_stck" /> HTML
             </li>

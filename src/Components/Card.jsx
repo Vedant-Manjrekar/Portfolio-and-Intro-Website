@@ -29,7 +29,10 @@ function Card1({ name, info, pic, classs, url, github }) {
           <Heading size={["sm", "md", "lg"]} p={{ base: "0 2vh" }}>
             {name}{" "}
           </Heading>
-          <Text fontSize={{ base: "15px" }} p={{ base: "0 2vh" }}>
+          <Text
+            fontSize={{ base: "12px", md: "15px", lg: "15px" }}
+            p={{ base: "0 2vh" }}
+          >
             {info}
           </Text>
         </Stack>
