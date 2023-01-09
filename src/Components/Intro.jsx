@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useDisclosure } from "@chakra-ui/react";
 import { GoThreeBars } from "react-icons/go";
-import resume from "../assets/Vedant_resume.pdf";
+import resume from "../assets/Veds_resume.pdf";
 import { goToHome, goToAbout, goToProjects, goToContact } from "./Navbar";
 import {
   Drawer,
