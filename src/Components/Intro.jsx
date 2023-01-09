@@ -182,19 +182,19 @@ function Intro() {
         ml={{ sm: "12vw", base: "5vw" }}
         className="name"
       >
-        <Button
-          // colorScheme="whiteAlpha"
-          color="white"
-          variant="outline"
-          fontSize="2vw"
-          h={{ base: "8vw", sm: "8vw", lg: "5vw" }}
-          w="18vw"
-          className="resume_btn"
-        >
-          <a href={resume} target="_blank">
+        <a href={resume} target="_blank">
+          <Button
+            // colorScheme="whiteAlpha"
+            color="white"
+            variant="outline"
+            fontSize="2vw"
+            h={{ base: "8vw", sm: "8vw", lg: "5vw" }}
+            w="18vw"
+            className="resume_btn"
+          >
             Resume
-          </a>
-        </Button>
+          </Button>
+        </a>
 
         <Button
           color="white"
